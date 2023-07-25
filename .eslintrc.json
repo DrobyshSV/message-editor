@@ -1,0 +1,68 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "unused-imports",
+    "import"
+  ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "./**.module.*",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": false
+        }
+      }
+    ],
+    "import/no-unresolved": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/extensions": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [
+        ".js", ".jsx", ".tsx"
+      ] }
+    ]
+  }
+}
