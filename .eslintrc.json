@@ -58,6 +58,7 @@
     "react/react-in-jsx-scope": "off",
     "import/extensions": "off",
     "react/function-component-definition": "off",
+    "import/prefer-default-export": "off",
     "react/jsx-filename-extension": [
       2,
       { "extensions": [

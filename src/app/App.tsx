@@ -1,8 +1,8 @@
-import React from 'react';
+import { ErrorButton } from './providers/ErrorBoundary';
 
 const App = () => (
   <div>
-    HELLO
+    <ErrorButton/>
   </div>
 );
 
