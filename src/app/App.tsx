@@ -1,9 +1,11 @@
-import { ErrorButton } from './providers/ErrorBoundary';
+import { memo, Suspense } from 'react';
 
-const App = () => (
-  <div>
-    <ErrorButton/>
-  </div>
-);
+import { AppRouter } from '@/app/router';
+
+const App = memo(() => (
+  <Suspense fallback=''>
+    <AppRouter />
+  </Suspense>
+));
 
 export default App;
