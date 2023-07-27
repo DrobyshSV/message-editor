@@ -14,13 +14,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx"
   },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
   },
-  "include": ["./src/**/*.ts","./src/**/*.tsx", "craco.config.ts"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "craco.config.ts"],
   "extends": "./tsconfig.paths.json"
 }
