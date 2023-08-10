@@ -1,7 +1,7 @@
 :root {
   // font Bebas Neue
-  --font-family-main-bold: 'BebasNeueBold', sans-serif;
-  --font-family-main-regular: 'BebasNeueRegular', sans-serif;
+  --font-family-main-bold: 'Bebas Neue Bold', sans-serif;
+  --font-family-main-regular: 'Bebas Neue Regular', sans-serif;
   --font-size-main-h1: 2.5rem;
   --font-size-main-h2: 2rem;
   --font-size-main-h3: 1.5rem;
@@ -10,9 +10,9 @@
   --font-line-main: normal;
 
   // font Avenir
-  --font-family-alternative-heavy: 'AvenirHeavy', sans-serif;
-  --font-family-alternative-medium: 'AvenirMedium', sans-serif;
-  --font-family-alternative-roman: 'AvenirRoman', sans-serif;
+  --font-family-alternative-heavy: 'Avenir Heavy', sans-serif;
+  --font-family-alternative-medium: 'Avenir Medium', sans-serif;
+  --font-family-alternative-roman: 'Avenir Roman', sans-serif;
   --font-size-alternative-h2: 1.5rem;
   --font-size-alternative-h3: 1.25rem;
   --font-size-alternative-h4-body: 1rem;
@@ -53,7 +53,7 @@
   --modal-z-index: 100;
   --overlay-z-index: 10;
   --overlay-color: rgba(0 0 0 / 60%);
-  --bg-color: rgb(191 219 253);
+  --bg-color: #fff;
   --inverted-bg-color: #EFF5F6;
   --text-color: #202023;
   --accent-color: #62DE85;
