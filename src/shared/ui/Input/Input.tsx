@@ -9,17 +9,15 @@ import React, {
 
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 
-import { HStack } from '../Stack';
+import { VStack } from '../Stack';
 import { Text } from '../Text';
 
 import styles from './Input.module.scss';
 
 type HTMLInputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
-  'value' | 'onChange' | 'readOnly' | 'size'
+  'value' | 'onChange' | 'readOnly'
 >;
-
-type InputSize = 's' | 'm' | 'l';
 
 interface InputProps extends HTMLInputProps {
   className?: string;
@@ -29,7 +27,6 @@ interface InputProps extends HTMLInputProps {
   readonly?: boolean;
   addonLeft?: ReactNode;
   addonRight?: ReactNode;
-  size?: InputSize;
   label?: string;
 }
 
@@ -103,10 +100,10 @@ export const Input = memo((props: InputProps) => {
 
   if (label) {
     return (
-      <HStack max gap="8">
-        <Text text={label} />
+      <VStack max gap="0.5" className={styles.InputWithLabel}>
+        <Text type="h5" text={label} className={classNames(styles.label, {[styles.focused_label]: isFocused})} />
         {input}
-      </HStack>
+      </VStack>
     );
   }
 
